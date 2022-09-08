@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul id="nav_bar">
+            <li class="nav-links" id="gmail"><a href="http://www.google.com">Gmail</a></li>
+            <li class="nav-links"><a href="#">Images</a></li>
+            <li id="sign_in"><a href="#">Sign In</a></li>
+          </ul>  
+        </nav>  
+      </header>  
+
+    <section class="section-1">
+        <img src="images2\logoimg.png" class="logo">
+        <div class="form">  
+             <img src="images2\search.svg" class="search-icon"> 
+             
+             <form id="frmSearch"  method="GET" >
+            <input type="text"  id="txtSearch" placeholder="search...">
+             </form>
+            
+             <img src="images2\vsimg.png" class="vs-icon"> 
+          
+       <!-- BUTTONS -->
+      <div id= "button">  
+            <input type="submit" class="s-btn" value="Google Search" >
+            <input type="submit" class="s-btn" value="I'm Feeling Lucky">
+     </div>
+        
+        <div class="section-icons">
+            <a href="#"><img src="images2\youtube.png"></img></a>
+            <a href="#"><img src="images2\facebook-logoimg.png"></img></a>
+            <a href="#"><img src="images2\google-meet.png"></img></a>
+            <a href="#"><img src="images2\instagram.png"></img></a>
+            <a href="#"><img src="images2\twitter.png"></img></a>
+        </div>
+    </section>
+    <footer>
+        <div class="links">
+            <div class="link-1">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">About</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div class="link-2">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("frmSearch").onsubmit=function(){
+            {
+        window.location = 'http://www.google.com/search?q=' + document.getElementById('txtSearch').value;
+        return false;
+    }
+        }
+    </script>
+</body>
+</html>

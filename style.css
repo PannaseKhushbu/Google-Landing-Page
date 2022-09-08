@@ -1,0 +1,167 @@
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: arial, sans-serif;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+#nav_bar {
+	float: right;
+  }
+  
+  #nav_bar li {
+	display: inline-block;
+	padding: 8px;
+  }
+  
+  #nav_bar #sign_in {
+	background: #4887ef; 
+	margin-right: 25px;
+	padding: 7px 15px;
+	border-radius: 3px; 
+	font-weight: bold;
+  }
+  
+  .nav-links {
+	color: #404040;
+  }
+  
+  a {
+	text-decoration: none;
+	color: inherit;
+  }
+  
+  li.nav-links a:hover {
+	text-decoration: underline;
+  }
+  
+  #sign_in:hover { 
+	box-shadow: 1px 1px 5px #999;
+  }
+  
+  #sign_in {
+	color: #fff;
+  }
+  /* navbar ends */
+.section-1 {
+	flex: 1;
+}
+.section-1 .logo {
+	display: block;
+	margin: 0px auto;
+	margin-top: 107px;
+}
+.form {
+	width: 580px;
+	margin: 0px auto;
+	position: relative;
+	margin-top: -8px;
+	text-align: center;
+}
+.form #txtSearch {
+	display: block;
+	border: 1px solid #ddd;
+	color: rgba(0,0,0, 0.87);
+	font-size: 16px;
+	padding: 13px;
+	padding-left: 45px;
+	border-radius: 25px;
+	width: 100%;
+	transition: box-shadow 100ms;
+	outline: none;
+	margin-top: 25px;
+}
+.form #txtSearch:hover {
+	border: 1px solid #fff;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 
+			    0 0 2px rgba(0, 0, 0, 0.05),
+				0 0 3px rgba(0, 0, 0, 0.05),
+				0 0 4px rgba(0, 0, 0, 0.05), 
+				0 0 5px rgba(0, 0, 0, 0.05), 
+				0 0 4px rgba(0, 0, 0, 0.05), 
+				0 0 5px rgba(0, 0, 0, 0.05) 
+}
+.form  .search-icon {
+    width: 32px;
+    opacity: .4;
+    position: absolute;
+    top: 8px;
+    left: 9px;
+}
+.form  .vs-icon {
+	width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 28px;
+}
+/* form section completed */
+#button {
+	border: 1px solid transparent;
+	color: rgb(16, 16, 16);
+	display: inline-block; 
+	margin-top: 28px; 
+	outline: none;
+	cursor: pointer;
+}
+.s-btn{
+	height: 4vh;
+    width: 157px;
+    margin-right: 10px;
+	border-radius: 4px;
+	font-size: 17px;
+
+}
+ .s-btn:hover {
+	border: 1px solid #aaa;
+}
+/* button  section end */
+.section-icons {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 13px;
+	color: #111;
+}
+.section-icons img{
+	height: 6vh;
+	width: 40px;
+}
+.section-icons a img {
+    margin-top: -12px;
+    margin-left: 6px;
+    border: 2px solid #ab9f9f;;
+    background-color: #eef0f4;
+    border-radius: 10px;
+    padding: 7px;
+}
+.section-icons a img:hover{
+    border: none;
+}
+footer {
+	background: black;
+}
+footer a {
+	color: white;
+	display: inline-block;
+	padding: 12px 11.3px;
+	font-size: 17px;
+}
+footer a:hover {
+	text-decoration: underline;
+    color:#4285f4;
+}
+.links {
+	border-top: 1px solid #ddd;
+	display: flex;
+}
+.link-1 {
+	padding-left: 18.7px;
+	flex: 1;
+}
+.link-2 {
+	padding-right: 18.7px;
+}
